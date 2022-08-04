@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/72a29a7f6a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--中文字形-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+    <!--英文字形-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+HK:wght@500&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    
+    <title>付費方案方案</title>
+</head>
+
+<body class="text-center">
+
+    <header>
+        <!--加上<div class='container'>就等於把所有東西都放置於容器內,navbar就置中-->
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="pictures/logo.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">最近更新</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      我的動畫
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">我的收藏</a></li>
+                      <li><a class="dropdown-item" href="#">最近觀看紀錄</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pay.html">付費方案</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">問題回報</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          
+          </nav>
+        </header>
+
+    <div
+		class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h1 class="display-4">付費方案</h1>
+		<p class="lead">無廣告版</p>
+	</div>
+
+	<div class="container">
+		<div class="card-deck mb-3 text-center">
+			<div class="card mb-4 shadow-sm">
+
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">無廣告30天</h4>
+				</div>
+
+				<div class="card-body">
+					<h1 class="card-title pricing-card-title">
+						<small class="text-muted">NTD.</small> 99
+					</h1>
+					<div class="pay_select">
+						<select id="S30">
+							<option value="">請選擇付款方式</option>
+							<option value="3001">中華電信寬頻網路帳單</option>
+							<option value="3002">中華電信手機帳單</option>
+							<option value="3003">市內電話帳單</option>
+							<option value="3004">信用卡</option>
+							<option value="3007">7-11超商代收</option>
+							<option value="3009">購買序號(全家超商代收)</option>
+							<option value="3011">LINE Pay</option>
+						</select>
+					</div>
+
+					<button
+						onclick="location.href='animePay2.php?item='+$('#S30').val()">下一步</button>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card-deck mb-3 text-center">
+			<div class="card mb-4 shadow-sm">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">無廣告90天</h4>
+
+				</div>
+				<div class="card-body">
+					<h1 class="card-title pricing-card-title">
+						<small class="text-muted">NTD.</small> 297
+					</h1>
+
+					<div class="pay_select">
+						<select id="S30">
+							<option value="">請選擇付款方式</option>
+							<option value="3001">中華電信寬頻網路帳單</option>
+							<option value="3002">中華電信手機帳單</option>
+							<option value="3003">市內電話帳單</option>
+							<option value="3004">信用卡</option>
+							<option value="3007">7-11超商代收</option>
+							<option value="3009">購買序號(全家超商代收)</option>
+							<option value="3011">LINE Pay</option>
+						</select>
+					</div>
+
+					<button
+						onclick="location.href='animePay2.php?item='+$('#S30').val()">下一步</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-deck mb-3 text-center">
+			<div class="card mb-4 shadow-sm">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">無廣告180天</h4>
+				</div>
+				<div class="card-body">
+					<h1 class="card-title pricing-card-title">
+						<small class="text-muted">NTD.</small> 594
+					</h1>
+					<div class="pay_select">
+						<select id="S30">
+							<option value="">請選擇付款方式</option>
+							<option value="3001">中華電信寬頻網路帳單</option>
+							<option value="3002">中華電信手機帳單</option>
+							<option value="3003">市內電話帳單</option>
+							<option value="3004">信用卡</option>
+							<option value="3007">7-11超商代收</option>
+							<option value="3009">購買序號(全家超商代收)</option>
+							<option value="3011">LINE Pay</option>
+						</select>
+					</div>
+
+					<button
+						onclick="location.href='animePay2.php?item='+$('#S30').val()">下一步</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+    <p class="mt-5 mb-3 text-muted">&copy;Wendy Liang 2022</p>  
+
+    
+</body>
+</html>
